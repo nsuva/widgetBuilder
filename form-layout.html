@@ -1,0 +1,115 @@
+<div class="text-center">
+    <!--<span class="glyphicon glyphicon-heart"></span>-->
+    <h3>Choose your Button Layout:</h3>
+</div>
+
+<div ng-init="showButtons()">
+<div ng-show="buyButtons" class="form-group col-md-6 col-md-offset-3" onchange="activateBtnLayout(this)">
+    <div class="radio">
+        <label>
+           <input id="B1" type="radio" ng-model="formData.button" value="B1" > <!-- ng-checked ="true" -->
+           <img src="assets/img/b1.png"/>
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input id="B2" type="radio" ng-model="formData.button" value="B2">
+            <img src="assets/img/b2.png"/>
+        </label>
+    </div>
+	<div class="radio">
+        <label>
+           <input id="B3" type="radio" ng-model="formData.button" value="B3">
+           <img src="assets/img/b3.png"/>
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input id="B4" type="radio" ng-model="formData.button" value="B4">
+            <img src="assets/img/b4.png"/>
+        </label>
+    </div>
+	<div class="radio">
+        <label>
+           <input id="B5" type="radio" ng-model="formData.button" value="B5">
+           <img src="assets/img/b5.png"/>
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input id="B6" type="radio" ng-model="formData.button" value="B6">
+            <img src="assets/img/b6.png"/>
+        </label>
+    </div>
+	<div class="radio">
+        <label>
+           <input id="B7" type="radio" ng-model="formData.button" value="B7">
+           <img src="assets/img/b7.png"/>
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input id="B8" type="radio" ng-model="formData.button" value="B8">
+            <img src="assets/img/b8.png"/>
+        </label>
+    </div>
+	<div class="radio">
+        <label>
+            <input id="B9" type="radio" ng-model="formData.button" value="B9">
+            <img src="assets/img/b9.png"/>
+        </label>
+    </div>
+</div>
+
+<div ng-show="donateButtons" class="form-group col-md-6 col-md-offset-3" onchange="activateBtnLayout(this)">
+    <div class="radio">
+        <label>
+           <input id="D1" type="radio" ng-model="formData.button" value="D1" > <!-- ng-checked ="true" -->
+           <img src="assets/img/d1.png"/>
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input id="D2" type="radio" ng-model="formData.button" value="D2">
+            <img src="assets/img/d1.png"/>
+        </label>
+    </div>
+	<div class="radio">
+        <label>
+           <input id="D3" type="radio" ng-model="formData.button" value="D3">
+           <img src="assets/img/d3.png"/>
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input id="D4" type="radio" ng-model="formData.button" value="D4">
+            <img src="assets/img/d4.png"/>
+        </label>
+    </div>
+	<div class="radio">
+        <label>
+           <input id="D5" type="radio" ng-model="formData.button" value="D5">
+           <img src="assets/img/d5.png"/>
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input id="D6" type="radio" ng-model="formData.button" value="D6">
+            <img src="assets/img/d6.png"/>
+        </label>
+    </div>
+</div>
+</div>
+
+
+<div class="form-group row">
+<div class="col-xs-6 col-xs-offset-3">
+    <button id="layoutNext" ui-sref="form.confirmations" class="btn btn-block btn-start" disabled>
+    Next <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </button>
+</div>
+</div>
+
+
+
+

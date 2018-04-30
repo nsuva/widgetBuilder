@@ -1,0 +1,47 @@
+<div class="row" >
+<div class="col-sm-6 col-sm-offset-3 text-center" >
+
+  <div id="form-container">
+  
+      <div class="page-header text-center" >
+          <a href="../widgetBuilder"><img class="toplogo" src="assets/img/logo.png" alt=""></a>
+		  <!--<h6>Widget Builder</h6>-->
+          
+          <!-- the links to our nested states using relative paths -->
+          <!-- add the active class if the state matches our ui-sref -->
+          <div id="status-buttons" class="text-center">
+		  <!--
+			  <a ui-sref-active="active" ui-sref=".type"><span>0</span> Welcome</a>
+           -->   
+		   
+		      <a ui-sref-active="active" ui-sref=".type"><span>1</span> Type</a>
+              <a ui-sref-active="active" ui-sref=".layout"><span>2</span> Layout</a>
+              <a ui-sref-active="active" ui-sref=".confirmations"><span>3</span> Settings</a>
+			  <a ui-sref-active="active" ui-sref=".widget"><span>4</span> Widget</a>
+			  
+			  
+          </div>
+      </div>
+      
+      <!-- use ng-submit to catch the form submission and use our Angular function -->
+      <form id="signup-form" ng-submit="processForm()">
+          <!-- our nested state views will be injected here -->
+          <div id="form-views" ui-view></div>
+      </form>
+	<!-- show our formData as it is being typed -->
+	 <!--<footer class="footer"> <br></div>-->
+	
+	 
+	 <!--
+	 
+	<pre>
+		{{ formData }}
+	</pre>
+  
+  -->
+  </div>
+  
+
+</div>
+</div>
+

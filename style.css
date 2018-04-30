@@ -1,0 +1,217 @@
+
+
+
+
+/* BASIC STYLINGS
+============================================================================= */
+
+@import "//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css";
+
+html {
+    position: relative;
+    min-height: 100%;
+	padding-bottom: 80px;
+}
+body {
+    margin: 0 0 60px; /* bottom has to be the same as footer height */
+}
+footer {
+    /* just for demo */
+    background-color: #272D63;
+	border-top: 2px solid #FFAD05;
+	-webkit-box-shadow: 0px -5px 5px 0px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow:    0px -5px 5px 0px #ccc;  /* Firefox 3.5 - 3.6 */
+	box-shadow:         0px -5px 5px 0px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    padding:20px;
+   /* just for demo */ 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+}
+
+
+body                            { padding-top:0px; 
+								  color: #666;
+								  background: #eee;
+								  height: 100%;
+								  margin: 0;
+								  font-size: 17px;
+								 /* background-repeat: no-repeat;
+								  background-attachment: fixed;
+								  background: -moz-linear-gradient(top, #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%) fixed;
+								  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f5f6), color-stop(37%,#e3eaed), color-stop(100%,#c8d7dc) fixed);
+								  background: -webkit-linear-gradient(top, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%) fixed;
+								  background: -o-linear-gradient(top, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%)fixed;
+								  background: -ms-linear-gradient(top, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%)fixed;
+								  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 );
+								  background: linear-gradient(top, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%)fixed;
+								  */
+								  }
+pre                             { margin-bottom:20px; }
+h6                             { color:#fff; }
+/* form styling */
+#form-container                { background:#eee; 
+								 margin-bottom:0px;
+								 border-radius:5px;
+								 width:100%;
+								 margin-top:5%;
+								 }
+											 
+#form-container .page-header   { background:#151515; 
+								-webkit-box-shadow: 0px 5px 5px 0px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+								-moz-box-shadow:    0px 5px 5px 0px #ccc;  /* Firefox 3.5 - 3.6 */
+								box-shadow:         0px 5px 5px 0px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+								margin:0; 
+								padding:27px; 
+								border-top-left-radius:0px; 
+								border-top-right-radius:0px; 
+								background: #272D63;
+								height: 100%;
+								margin: 0;
+								border-bottom: 4px solid #FFAD05;
+								position: fixed;
+								left: 0;
+								top: 0;
+								height: 155px;
+								width: 100%;
+								z-index: 1;
+																
+								/*
+								 background-repeat: no-repeat;
+								 background-attachment: fixed;
+								 background: -moz-linear-gradient(top, #272D63 0%, #75A0D5 88%, #c8d7dc 100%) fixed;
+								 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#272D63), color-stop(88%,#75A0D5), color-stop(100%,#c8d7dc) fixed);
+								 background: -webkit-linear-gradient(top, #272D63 0%,#75A0D5 88%,#c8d7dc 100%) fixed;
+								 background: -o-linear-gradient(top, #272D63 0%,#75A0D5 88%,#c8d7dc 100%)fixed;
+								 background: -ms-linear-gradient(top, #272D63 0%,#75A0D5 88%,#c8d7dc 100%)fixed;
+								 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#272D63', endColorstr='#c8d7dc',GradientType=0 );
+								 background: linear-gradient(top, #272D63 0%,#75A0D5 88%,#c8d7dc 100%)fixed;
+								 */
+								 }
+								 
+								
+
+/* numbered buttons */
+#status-buttons                 {  }
+#status-buttons a               { color:#FFF; display:inline-block; font-size:12px; margin-right:10px; text-align:center; text-transform:uppercase; }
+#status-buttons a:hover         { text-decoration:none; }
+#status-buttons span            { background:#080808; display:block; height:30px; margin:0 auto 10px; padding-top:5px; width:30px; 
+    border-radius:50%; }
+
+/* active buttons */
+#status-buttons a.active span   { background:#FFAD05; }
+
+.radio, .checkbox{
+	
+	padding: 7px !important;
+}
+
+.spacer {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.fullwidth{
+	padding: 0px;
+}
+.toplogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100px;
+    max-width: 230px;
+    width: 100% !important;
+    padding-bottom: 15px;
+	padding-right:20px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+   opacity: 1;
+}
+
+input, button, select, textarea{
+	font-size: 18px;
+	border: 3px solid#bcfbc3;
+}
+
+/* start button */
+.btn-start {
+    color: #ffffff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.btn-info{
+	background-color:#272D63 !important;
+	border-color: #272D63 !important;
+	}
+	
+.confirmations{
+	left: -15% !important;
+	text-align: left;
+}
+
+
+/* MOBILE SETTINGS
+============================================================================= */
+@media (max-width : 768px) {
+	#form-container{margin-top:0px; !important}
+	
+	
+}
+				
+
+/* ANIMATION STYLINGS
+============================================================================= */
+#signup-form            { position:relative; min-height:400px; overflow:hidden; padding:30px; padding-top:150px; }
+
+/* basic styling for entering and leaving */
+/* left and right added to ensure full width */
+#form-views.ng-enter,
+#form-views.ng-leave      { position:absolute; left:30px; right:30px;
+    transition:0.5s all ease; -moz-transition:0.5s all ease; -webkit-transition:0.5s all ease; 
+}
+    
+/* enter animation */
+#form-views.ng-enter            { 
+    -webkit-animation:slideInRight 0.5s both ease;
+	-moz-animation:slideInRight 0.5s both ease;
+	animation:slideInRight 0.5s both ease; 
+}
+
+/* leave animation */
+#form-views.ng-leave            { 
+    -webkit-animation:slideOutLeft 0.5s both ease;
+	-moz-animation:slideOutLeft 0.5s both ease;
+	animation:slideOutLeft 0.5s both ease;   
+}
+
+/* ANIMATIONS
+============================================================================= */
+/* slide out to the left */
+@keyframes slideOutLeft {
+	to 		{ transform: translateX(-200%); }
+}
+@-moz-keyframes slideOutLeft {	
+	to 		{ -moz-transform: translateX(-200%); }
+}
+@-webkit-keyframes slideOutLeft {
+	to 		{ -webkit-transform: translateX(-200%); }
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+	from 	{ transform:translateX(200%); }
+	to 		{ transform: translateX(0); }
+}
+@-moz-keyframes slideInRight {
+	from 	{ -moz-transform:translateX(200%); }
+	to 		{ -moz-transform: translateX(0); }
+}
+@-webkit-keyframes slideInRight {
+	from 	{ -webkit-transform:translateX(200%); }
+	to 		{ -webkit-transform: translateX(0); }
+}

@@ -1,0 +1,42 @@
+<div class="text-center">
+    <h3>Your code!</h3>
+    
+	<div id="colC" class="col-xs-0 " > <!-- col-xs-0 colB explorerSection hidden -->
+	  <div class="panel3-contents">
+		<p style="font-size:14px; text-align:justify">Simply paste this code into your sites HTML where you'd like the button to appear (don't forget to set the amount, description values and set what you want to do on payment success and failure)...</p>
+		
+		<div id="widgetCode" style="font-family: monospace; font-size: 12px; padding: 10px; color: #ddd; background: #1d1d1b; text-align:left;">
+		<span style="color: #555">&lt;!-- Load core functionality //--&gt;</span><br>
+		&lt;<span style="color: #dd0">script</span> <span style="color: #f80">src</span><span style="color: #099">=</span>"<span style="color: #cc1e5c">://mattpass.com/lab/widget.js</span>" <span style="color: #f80">id</span><span style="color: #099">=</span>"<span style="color: #cc1e5c">btcpWidget</span>"&gt;&lt;<span style="color: #dd0">/script</span>&gt;<br><br>
+		<span style="color: #555">&lt;!-- Set parameters and actions //--&gt;</span><br>
+		&lt;<span style="color: #dd0">script</span>&gt;<br>
+			&nbsp;&nbsp;<span style="color: #6cb5d9">btcpWidget</span>.data = {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;"<span style="color: #f80">wallet</span>" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: "<span style="color: #f80">walletaddress1234567890</span>",<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;"<span style="color: #f80">amount</span>" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: "<span style="color: #f80">12.3456</span>",<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;"<span style="color: #f80">description</span>" : "<span style="color: #f80">Shoes</span>"<br>
+			&nbsp;&nbsp;};<br><br>
+			&nbsp;&nbsp;<span style="color: #6cb5d9">btcpWidget</span>.onPaymentSuccess = <span style="color: #f80">function</span>(data) {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;alert("<span style="color: #f80">Payment success!</span> " + <span style="color: #6cb5d9">data</span>.token);<br>
+			&nbsp;&nbsp;};<br><br>
+			&nbsp;&nbsp;<span style="color: #6cb5d9">btcpWidget</span>.onPaymentFail = <span style="color: #f80">function</span>(data) {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;alert("<span style="color: #f80">Payment failed!</span> " + <span style="color: #6cb5d9">data</span>.reason);<br>
+			&nbsp;&nbsp;}<br>
+		&lt;<span style="color: #dd0">/script</span>&gt;
+		</div>
+		<p>
+		   <button id="copy" class="btn btn-block btn-start" type="reset" style="margin-top:15px; position: relative;" ng-click="showVars()" >
+			 <i class="fa fa-copy"><span>&nbsp;&nbsp;</span></i>Copy to Clipboard
+		   </button>
+		</p>
+		<p>&nbsp;</p>
+		<!--
+		<p style="font-size:13px;">Now, as if by magic, you can now accept $BTCP on your site! </p>
+		-->
+		<label>Problems?</label>
+		<p style="font-size:14px; text-align:justify;">This is a super early development version of the widget creator (v0.0.1 right now), so if you're having any troubles or have feedback, let us know as we're looking to keep improving this for all vendors!</p>
+	  </div>
+	</div>
+	<!--
+    <button type="submit" class="btn btn-danger">Submit</button>
+	-->
+</div>
